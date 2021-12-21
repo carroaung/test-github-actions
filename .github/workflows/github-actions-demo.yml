@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: current_branch=${GITHUB_REF#refs/heads/}
-      - run: echo "Current Branch $current_branch"
+             echo "Current Branch $current_branch"
