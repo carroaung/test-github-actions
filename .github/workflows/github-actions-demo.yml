@@ -1,0 +1,8 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: current_branch=${GITHUB_REF#refs/heads/}
+      - run: echo "Current Branch $current_branch"
