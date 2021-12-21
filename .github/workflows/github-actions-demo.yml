@@ -4,5 +4,6 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: current_branch=${GITHUB_REF#refs/heads/}
-             echo "Current Branch $current_branch"
+      - run: |
+          current_branch=${GITHUB_REF#refs/heads/}
+          echo "Current Branch $current_branch"
